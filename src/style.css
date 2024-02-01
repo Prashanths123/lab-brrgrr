@@ -5,24 +5,21 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Ubuntu', sans-serif;
 }
-
-
-
 .header {
     position: relative;
 }
 
 
 .Group-4 {
-    width: 1440px;
-    height: 208px;
+    width: 100%;
+    height: auto;
     object-fit: contain;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
 }
+
 
 .Group-5 {
     position: absolute;
@@ -42,27 +39,6 @@ body {
     height: 400px;
     background-color: #212121;
 }
-
-
-
-
-.Group-7 {
-    width: 240px;
-    height: 301px;
-    object-fit: contain;
-    position: absolute;
-    top: 10%;
-    right: 10%;
-}
-
-.Group-3 {
-    position: relative;
-    width: 1440px;
-    height: 220px;
-    object-fit: contain;
-}
-
-
 .Group-2 {
     position: absolute;
     top: 20%;
@@ -71,13 +47,19 @@ body {
     height: 174px;
     object-fit: contain;
 }
+.Group-3 {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+}
 
 .Rectangle2 {
-    position: absolute;
     top: 0%;
     left: 5%;
     width: 657px;
     height: 128px;
+    position: absolute;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
     border: solid 1px #e4e4e4;
     background-color: #ffffff;
@@ -88,27 +70,34 @@ body {
 }
 
 .container-text {
-    margin-left: 10px;
-    margin-top: 10px;
     font-size: 18px;
     font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .button-container {
-    margin-top: 20px;
     display: flex;
+    margin-top: 20px;
     justify-content: space-around;
 }
 
 .button {
-    width: 112px;
-    height: 58px;
     border: solid 1px #e4e4e4;
     background-color: #ffffff;
     text-align: center;
+    width: 112px;
+    height: 58px;
     line-height: 58px;
     cursor: pointer;
     box-shadow: 0 9px #999;
+}
+.button.active {
+    background-color: #ffd058;
+    line-height: 58px;
+    text-align: center;
+    width: 112px;
+    height: 58px;
 }
 
 .button:active {
@@ -117,25 +106,16 @@ body {
     transform: translateY(4px);
 }
 
-.button.active {
-
-    width: 112px;
-    height: 58px;
-    background-color: #ffd058;
-    line-height: 58px;
-    text-align: center;
-
-}
 
 .Rectangle3 {
-    display: flex;
-    justify-content: center;
     align-items: center;
     position: absolute;
     right: 10%;
     bottom: 10%;
     width: 450px;
     height: 179px;
+    display: flex;
+    justify-content: center;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
     border: solid 1px #e4e4e4;
     background-color: #ffffff;
@@ -166,10 +146,12 @@ body {
 }
 
 .menu-container {
+    left: 40%;
+    color: #000;
+    transform: translate(-50%, -50%);
     position: absolute;
     top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    
 }
 
 .menu-container h3 {
@@ -181,30 +163,11 @@ body {
 }
 
 .burger {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     bottom: 0%;
     left: 25%;
-    display: flex;
-    flex-direction: column;
-}
-
-.burger img {
-    width: 154px;
-    height: auto;
-}
-
-.Rectangle4 p {
-    font-size: 16px;
-    margin-left: 20px;
-}
-
-.Rectangle4 p:nth-child(1) {
-    margin-top: 20px;
-}
-
-.Rectangle4 p.price-details {
-    font-size: 30px;
-    font-weight: bold;
 
 }
 
@@ -213,20 +176,65 @@ body {
     position: absolute;
     bottom: 10%;
     right: 5%;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
     width: 184px;
     height: 42px;
     border-radius: 4px;
     background-color: #f05136;
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
     line-height: 42px;
 }
+
+.burger img {
+    width: 154px;
+    height: auto;
+}
+
+.Rectangle4 p:nth-child(1) {
+    margin-top: 20px;
+}
+.Rectangle4 p {
+    font-size: 16px;
+    margin-left: 20px;
+}
+.Rectangle4 p.price-details {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.Group-7 {
+    width: 240px;
+    height: 301px;
+    object-fit: contain;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+
 .footers{
-	position: absolute;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
+    font-size: 18px;
 	font-family: Nunito Sans;
+	position: absolute;
+	top: 850px;
+	margin-left: 100px;
 	font-style: normal;
+    color: black;
+}
+#patty {
+    display: none;
+}
+#tomato {
+    display: none;
+}
+#onion {
+    display: none;
+}
+#cheese {
+    display: none;
+}
+
+#lettuce {
+    display: none;
 }
